@@ -189,7 +189,7 @@ body {
   font-size: 14px;
   line-height: 2;
   color: #555;
-  background: #f5f7f9;
+  background: #faf3f7;
 }
 @media (max-width: 767px) {
   body {
@@ -290,8 +290,8 @@ span.exturl {
 }
 a:hover,
 span.exturl:hover {
-  color: #222;
-  border-bottom-color: #222;
+  color: $black-deep;
+  border-bottom-color: $black-deep;
 }
 blockquote {
   margin: 0;
@@ -454,7 +454,7 @@ body {
 }
 @media (min-width: 1200px) {
   .container .header-inner {
-    width: 1160px;
+    width: 880px;
   }
 }
 @media (min-width: 1600px) {
@@ -471,7 +471,7 @@ body {
 }
 @media (min-width: 1200px) {
   .container .main-inner {
-    width: 1160px;
+    width: 880px;
   }
 }
 @media (min-width: 1600px) {
@@ -493,7 +493,7 @@ body {
 }
 @media (min-width: 1200px) {
   .container .footer-inner {
-    width: 1160px;
+    width: 880px;
   }
 }
 @media (min-width: 1600px) {
@@ -969,9 +969,9 @@ pre .javascript .function {
   line-height: 2;
 }
 .btn:hover {
-  border-color: #222;
+  border-color: $black-deep;
   color: #fff;
-  background: #222;
+  background: $black-deep;
 }
 .btn +.btn {
   margin: 0 0 8px 8px;
@@ -1028,7 +1028,7 @@ pre .javascript .function {
 .pagination .prev:hover,
 .pagination .next:hover,
 .pagination .page-number:hover {
-  border-top-color: #222;
+  border-top-color: $black-deep;
 }
 .pagination .space {
   padding: 0;
@@ -1060,7 +1060,7 @@ pre .javascript .function {
   .pagination .prev:hover,
   .pagination .next:hover,
   .pagination .page-number:hover {
-    border-bottom-color: #222;
+    border-bottom-color: $black-deep;
   }
 }
 .comments {
@@ -1081,7 +1081,7 @@ pre .javascript .function {
   z-index: 1050;
   padding: 0 6px;
   width: 24px;
-  background: #222;
+  background: $black-deep;
   font-size: 12px;
   opacity: 0.6;
   color: #fff;
@@ -1114,7 +1114,7 @@ pre .javascript .function {
 }
 .headband {
   height: 3px;
-  background: #222;
+  background: #ffc0cb;
 }
 .site-meta {
   margin: 0;
@@ -1130,7 +1130,7 @@ pre .javascript .function {
   display: inline-block;
   padding: 0 40px;
   color: #fff;
-  background: #222;
+  background: $black-deep;
   border-bottom: none;
 }
 .brand:hover {
@@ -1229,7 +1229,7 @@ pre .javascript .function {
 }
 .menu .menu-item a:hover,
 .menu .menu-item span.exturl:hover {
-  border-bottom-color: #222;
+  border-bottom-color: $black-deep;
 }
 .menu .menu-item .fa {
   margin-right: 5px;
@@ -1444,7 +1444,7 @@ pre .javascript .function {
   border-bottom-color: #666;
 }
 .posts-collapse .post-header:hover::before {
-  background: #222;
+  background: $black-deep;
 }
 .posts-collapse .post-meta {
   position: absolute;
@@ -1606,7 +1606,7 @@ pre .javascript .function {
   border-bottom: none;
 }
 .post-nav-item a:hover {
-  color: #222;
+  color: $black-deep;
   border-bottom: none;
 }
 .post-nav-item a:active {
@@ -1688,7 +1688,7 @@ pre .javascript .function {
   width: 0;
   z-index: 1040;
   box-shadow: inset 0 2px 6px #000;
-  background: #222;
+  background: $black-deep;
   -webkit-transform: translateZ(0);
 }
 .sidebar a,
@@ -1730,7 +1730,7 @@ pre .javascript .function {
   width: 14px;
   height: 14px;
   padding: 5px;
-  background: #222;
+  background: $black-deep;
   line-height: 0;
   z-index: 1050;
   cursor: pointer;
@@ -1770,7 +1770,7 @@ pre .javascript .function {
 .site-author-name {
   margin: 0;
   text-align: center;
-  color: #222;
+  color: $black-deep;
   font-weight: 600;
 }
 .site-description {
@@ -1849,7 +1849,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #24ff2b;
+  background: #8e58ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2523,7 +2523,7 @@ ul.breadcrumb li+li:last-child {
 }
 @media (min-width: 1200px) {
   .header {
-    width: 1160px;
+    width: 880px;
   }
 }
 @media (min-width: 1600px) {
@@ -2628,7 +2628,7 @@ ul.breadcrumb li+li:last-child {
   float: left;
   margin-left: -100%;
   width: 240px;
-  background: #f5f7f9;
+  background: #faf3f7;
   box-shadow: none;
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2680,7 +2680,7 @@ ul.breadcrumb li+li:last-child {
 .site-meta {
   padding: 60px 0;
   color: #fff;
-  background: #ffb6c1;
+  background: #ffb6c1; /* title的颜色和高度 */
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .site-meta {
@@ -2868,7 +2868,7 @@ ul.breadcrumb li+li:last-child {
 }
 .sidebar a:hover,
 .sidebar span.exturl:hover {
-  color: #222;
+  color: $black-deep;
 }
 .site-state-item {
   padding: 0 10px;
