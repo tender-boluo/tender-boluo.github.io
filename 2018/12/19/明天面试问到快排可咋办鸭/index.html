@@ -104,18 +104,18 @@
 
 
 
-  <meta name="description" content="每天多学一点新算法stl里的sort不好用吗，为什么非要手写快排呢？还要冒着退化成n^2的风险因为听说面试不会写快排十分致命快排的核心在于设置一个枢纽值在枢纽值的前半部分的值均小于等于枢纽值，后半部分均大于等于枢纽值然后分别对前半部分和后半部分再次快排最终得到有序数组">
+  <meta name="description" content="每天多学一点新算法stl里的sort不好用吗，为什么非要手写快排呢？还要冒着退化成n^2的风险因为听说面试不会写快排十分致命">
 <meta name="keywords" content="排序">
 <meta property="og:type" content="article">
 <meta property="og:title" content="明天面试问到快排可咋办鸭">
 <meta property="og:url" content="http://boluo.com/2018/12/19/明天面试问到快排可咋办鸭/index.html">
 <meta property="og:site_name" content="小菠萝">
-<meta property="og:description" content="每天多学一点新算法stl里的sort不好用吗，为什么非要手写快排呢？还要冒着退化成n^2的风险因为听说面试不会写快排十分致命快排的核心在于设置一个枢纽值在枢纽值的前半部分的值均小于等于枢纽值，后半部分均大于等于枢纽值然后分别对前半部分和后半部分再次快排最终得到有序数组">
+<meta property="og:description" content="每天多学一点新算法stl里的sort不好用吗，为什么非要手写快排呢？还要冒着退化成n^2的风险因为听说面试不会写快排十分致命">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-19T08:06:54.305Z">
+<meta property="og:updated_time" content="2018-12-19T12:55:11.980Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="明天面试问到快排可咋办鸭">
-<meta name="twitter:description" content="每天多学一点新算法stl里的sort不好用吗，为什么非要手写快排呢？还要冒着退化成n^2的风险因为听说面试不会写快排十分致命快排的核心在于设置一个枢纽值在枢纽值的前半部分的值均小于等于枢纽值，后半部分均大于等于枢纽值然后分别对前半部分和后半部分再次快排最终得到有序数组">
+<meta name="twitter:description" content="每天多学一点新算法stl里的sort不好用吗，为什么非要手写快排呢？还要冒着退化成n^2的风险因为听说面试不会写快排十分致命">
 
 
 
@@ -390,7 +390,7 @@
                 
               
 
-              <time title="创建时间：2018-12-19 15:50:51 / 修改时间：16:06:54" itemprop="dateCreated datePublished" datetime="2018-12-19T15:50:51+08:00">2018-12-19</time>
+              <time title="创建时间：2018-12-19 15:50:51 / 修改时间：20:55:11" itemprop="dateCreated datePublished" datetime="2018-12-19T15:50:51+08:00">2018-12-19</time>
             
 
             
@@ -446,8 +446,9 @@
       
 
       
-        <h1 id="每天多学一点新算法"><a href="#每天多学一点新算法" class="headerlink" title="每天多学一点新算法"></a>每天多学一点新算法</h1><h2 id="stl里的sort不好用吗，为什么非要手写快排呢？"><a href="#stl里的sort不好用吗，为什么非要手写快排呢？" class="headerlink" title="stl里的sort不好用吗，为什么非要手写快排呢？"></a>stl里的sort不好用吗，为什么非要手写快排呢？</h2><h2 id="还要冒着退化成n-2的风险"><a href="#还要冒着退化成n-2的风险" class="headerlink" title="还要冒着退化成n^2的风险"></a>还要冒着退化成n^2的风险</h2><h2 id="因为听说面试不会写快排十分致命"><a href="#因为听说面试不会写快排十分致命" class="headerlink" title="因为听说面试不会写快排十分致命"></a>因为听说面试不会写快排十分致命</h2><p>快排的核心在于设置一个枢纽值<br>在枢纽值的前半部分的值均小于等于枢纽值，后半部分均大于等于枢纽值<br>然后分别对前半部分和后半部分再次快排最终得到有序数组</p>
+        <h2 id="每天多学一点新算法"><a href="#每天多学一点新算法" class="headerlink" title="每天多学一点新算法"></a>每天多学一点新算法</h2><p><strong>stl里的sort不好用吗，为什么非要手写快排呢？</strong><br><strong>还要冒着退化成n^2的风险</strong><br><strong>因为听说面试不会写快排十分致命</strong></p>
 <a id="more"></a>
+<p>快排的核心在于设置一个枢纽值<br>在枢纽值的前半部分的值均小于等于枢纽值，后半部分均大于等于枢纽值<br>然后分别对前半部分和后半部分再次快排最终得到有序数组</p>
 <p>对于我刚刚学习的这个快排，就是对于待排序的数组<br>取出数组中的第一个值作为枢纽值<br>然后在数组中找出枢纽值合适的位置</p>
 <p>设定first和last两个指针只要，first <strong>小于</strong> last，<br>从后向前找到第一个<strong>小于</strong>枢纽值的位置，并把这个值存在first的位置<br>从前向后找到第一个<strong>大于</strong>枢纽值的位置，并把这个值存在last的位置<br>每次赋值的位置一定为空，是枢纽值取出的位置。</p>
 <p>最后将枢纽值放在first指针的位置。</p>
@@ -641,7 +642,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#每天多学一点新算法"><span class="nav-number">1.</span> <span class="nav-text">每天多学一点新算法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#stl里的sort不好用吗，为什么非要手写快排呢？"><span class="nav-number">1.1.</span> <span class="nav-text">stl里的sort不好用吗，为什么非要手写快排呢？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#还要冒着退化成n-2的风险"><span class="nav-number">1.2.</span> <span class="nav-text">还要冒着退化成n^2的风险</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#因为听说面试不会写快排十分致命"><span class="nav-number">1.3.</span> <span class="nav-text">因为听说面试不会写快排十分致命</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#每天多学一点新算法"><span class="nav-number">1.</span> <span class="nav-text">每天多学一点新算法</span></a></li></ol></div>
             
 
           </div>
