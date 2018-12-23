@@ -105,14 +105,14 @@
 
 
   <meta name="description" content="鼠标点击特效qwq其实本来不太想写博客美化的博客，感觉太睿智了但是我搜到的博客们，更睿智于是就有了这篇小博客，为您深入浅出的讲解深奥的js">
-<meta name="keywords" content="javascript 美化">
+<meta name="keywords" content="javascript,美化">
 <meta property="og:type" content="article">
 <meta property="og:title" content="是你最爱的鼠标点击特效">
 <meta property="og:url" content="http://boluo.com/posts/5459131c.html">
 <meta property="og:site_name" content="小菠萝">
 <meta property="og:description" content="鼠标点击特效qwq其实本来不太想写博客美化的博客，感觉太睿智了但是我搜到的博客们，更睿智于是就有了这篇小博客，为您深入浅出的讲解深奥的js">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-23T08:54:27.388Z">
+<meta property="og:updated_time" content="2018-12-23T09:08:25.165Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="是你最爱的鼠标点击特效">
 <meta name="twitter:description" content="鼠标点击特效qwq其实本来不太想写博客美化的博客，感觉太睿智了但是我搜到的博客们，更睿智于是就有了这篇小博客，为您深入浅出的讲解深奥的js">
@@ -390,7 +390,7 @@
                 
               
 
-              <time title="创建时间：2018-12-23 13:28:39 / 修改时间：16:54:27" itemprop="dateCreated datePublished" datetime="2018-12-23T13:28:39+08:00">2018-12-23</time>
+              <time title="创建时间：2018-12-23 13:28:39 / 修改时间：17:08:25" itemprop="dateCreated datePublished" datetime="2018-12-23T13:28:39+08:00">2018-12-23</time>
             
 
             
@@ -460,7 +460,8 @@
 <p>所以innerHTML了解一下？<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.body.appendChild(heart).innerHTML = <span class="string">"等下给你看菠萝"</span>;</span><br></pre></td></tr></table></figure></p>
 <p>通过这个其实还可以插入图片噢…图片路径和博文同一路径噢。</p>
 <p>完整代码：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">window</span>.onclick = <span class="function"><span class="keyword">function</span>(<span class="params">event</span>) </span>&#123;</span><br><span class="line">            <span class="keyword">var</span> heart = <span class="built_in">document</span>.createElement(<span class="string">"b"</span>);</span><br><span class="line">            heart.onselectstart = <span class="keyword">new</span> <span class="built_in">Function</span>(<span class="string">'event.returnValue=false'</span>);</span><br><span class="line">            <span class="keyword">var</span> flag = <span class="built_in">Math</span>.random();</span><br><span class="line">            <span class="keyword">if</span>(flag &gt; <span class="number">0.5</span>)</span><br><span class="line">                <span class="built_in">document</span>.body.appendChild(heart).innerHTML = <span class="string">"&lt;img src=\"images\\apple.png\"/&gt;"</span>;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">                <span class="built_in">document</span>.body.appendChild(heart).innerHTML = <span class="string">"等下给你看菠萝"</span>;</span><br><span class="line"></span><br><span class="line">            heart.style.cssText = <span class="string">"position: fixed;left:-100%;"</span>;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">var</span> f = <span class="number">12</span>, <span class="comment">// 字体大小</span></span><br><span class="line">                x = event.clientX - f / <span class="number">2</span>, <span class="comment">// 横坐标</span></span><br><span class="line">                y = event.clientY - f, <span class="comment">// 纵坐标</span></span><br><span class="line">                c = randomColor(), <span class="comment">// 随机颜色</span></span><br><span class="line">                a = <span class="number">1</span>, <span class="comment">// 透明度</span></span><br><span class="line">                s = <span class="number">1.2</span>; <span class="comment">// 放大缩小</span></span><br><span class="line">            <span class="keyword">var</span> timer = setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">                <span class="keyword">if</span> (a &lt;= <span class="number">0</span>) &#123;</span><br><span class="line">                    <span class="built_in">document</span>.body.removeChild(heart);</span><br><span class="line">                    clearInterval(timer);</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    heart.style.cssText = <span class="string">"font-size:12px;cursor: default;position: fixed;color:"</span> + c + <span class="string">";left:"</span> + x + <span class="string">"px;top:"</span> + y + <span class="string">"px;opacity:"</span> + a + <span class="string">";transform:scale("</span> + s + <span class="string">");"</span>;</span><br><span class="line">                    y--;</span><br><span class="line">                    a -= <span class="number">0.016</span>;</span><br><span class="line">                    s += <span class="number">0.002</span>;</span><br><span class="line"></span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">            &#125;, <span class="number">12</span>)</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 随机颜色</span></span><br><span class="line">        <span class="function"><span class="keyword">function</span> <span class="title">randomColor</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">return</span> <span class="string">"rgb("</span> + (~~(<span class="built_in">Math</span>.random() * <span class="number">255</span>)) + <span class="string">","</span> + (~~(<span class="built_in">Math</span>.random() * <span class="number">255</span>)) + <span class="string">","</span> + (~~(<span class="built_in">Math</span>.random() * <span class="number">255</span>)) + <span class="string">")"</span>;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;())</span><br></pre></td></tr></table></figure></p>
-<p>next主题的食用方式呢，就是先保存为一个js文件命名任意噢,<br>然后放在themes\next\source\js\src路径下,<br>下一步：themes\next\layout\ _layout.swig 文件下在body中引入这个js噢，<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=<span class="string">"text/javascript"</span> src=<span class="string">"/js/src/你爱的名字.js"</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
+<p>next主题的食用方式呢，就是先保存为一个js文件命名任意噢,<br>然后放在themes\next\source\js\src路径下,<br>下一步<br>themes\next\layout\ _layout.swig 文件下在body中引入这个js噢，<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=<span class="string">"text/javascript"</span> src=<span class="string">"/js/src/你爱的名字.js"</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
+<p>就效果就在本页面点点就知道惹qwq..</p>
 
       
     </div>
@@ -484,7 +485,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/javascript-美化/" rel="tag"># javascript 美化</a>
+            <a href="/tags/javascript/" rel="tag"># javascript</a>
+          
+            <a href="/tags/美化/" rel="tag"># 美化</a>
           
         </div>
       
@@ -594,11 +597,7 @@
                     
                       
                     
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
