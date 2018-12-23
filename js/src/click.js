@@ -1,10 +1,12 @@
-(function() {
+(
+    function() 
+    {
         window.onclick = function(event) {
             var heart = document.createElement("b");
             heart.onselectstart = new Function('event.returnValue=false');
             var flag = Math.random();
             if(flag > 0.5)
-                document.body.appendChild(heart).innerHTML = "<img src=\"images\\apple.png\"/>";
+                document.body.appendChild(heart).innerHTML = "<img src=\"..\\images\\apple.png\"/>";
             else
                 document.body.appendChild(heart).innerHTML = "等下给你看菠萝";
 
@@ -39,8 +41,7 @@
         }
         // 随机颜色
         function randomColor() {
-
             return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + ")";
-
         }
-    }())
+    }()
+)
